@@ -41,7 +41,7 @@ function App() {
   return (
     <Container maxWidth="sm" style={{ marginTop: '50px' }}>
       <div style={{ width: 'fit-content', margin: '0 auto' }}>
-        <img src={logo} style={{ height: '100px' }} />
+        <img alt="" src={logo} style={{ height: '100px' }} />
       </div>
       <p style={{ marginTop: '20px' }}>Upload an image of Mario or Luigi and this FastAi image recognition model will tell you which character it is!</p>
       <StyledForm onSubmit={submit}>
@@ -61,7 +61,7 @@ function App() {
       </StyledForm>
       <div style={{ width: 'fit-content', margin: '0 auto' }}>
         {modelPred && <h3 style={{ textAlign: 'center' }}>{modelPred}</h3>}
-        <img src={filePreview} style={{ marginTop: '40px' }}/>
+        <img alt="" src={filePreview} style={{ marginTop: '40px' }}/>
       </div>
     </Container>
   )
