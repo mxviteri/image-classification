@@ -19,3 +19,6 @@ def classify():
     return jsonify({
         'prediction': str(pred_class)
     })
+
+if __name__ == '__main__':
+    app.run()
