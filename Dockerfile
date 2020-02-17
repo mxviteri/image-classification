@@ -6,7 +6,7 @@ RUN apt install -y python3-dev gcc
 ADD requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-# COPY app app/
+COPY app.py app.py
 
 # RUN python app/server.py
 RUN flask run
