@@ -1,6 +1,6 @@
 runtime: custom
 env: flex
-entrypoint: flask run -p $PORT
+# entrypoint: flask run -p $PORT
 resources:
   cpu: 2
   memory_gb: 4.5
