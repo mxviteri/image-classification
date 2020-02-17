@@ -1,4 +1,4 @@
-runtime: python
+runtime: custom
 env: flex
 entrypoint: flask run -p $PORT
 resources:
