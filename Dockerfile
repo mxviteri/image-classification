@@ -6,13 +6,9 @@ RUN apt install -y python3-dev gcc
 ADD requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-COPY app.py app.py
+WORKDIR /app
+COPY . /app
 
-# RUN python app/server.py
-# RUN flask run
+ENTRYPOINT ["python"]
 
-EXPOSE 8080
-
-ENTRYPOINT ["flask"]
-
-CMD ["run"]
+CMD ["app.py"]

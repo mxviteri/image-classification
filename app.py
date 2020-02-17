@@ -24,3 +24,5 @@ def classify():
     return jsonify({
         'prediction': str(pred_class)
     })
+
+app.run(host='0.0.0.0')
